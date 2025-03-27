@@ -342,6 +342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4586526161665663564}
   - component: {fileID: 444058308941781609}
+  - component: {fileID: 1806484934913953777}
   m_Layer: 0
   m_Name: TreeLarge
   m_TagString: Obstacle
@@ -391,3 +392,15 @@ CapsuleCollider:
   m_Height: 30
   m_Direction: 1
   m_Center: {x: 0.4, y: 12.68, z: 1.7}
+--- !u!114 &1806484934913953777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615756510139021564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c6b443e1fc7bb4ebac33f7924cd9d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

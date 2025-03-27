@@ -10,19 +10,20 @@ public class PlayerControl : MonoBehaviour
     private Rigidbody rb;
     private Animator animator;
     private bool hasJumped;
+    private TakeDamage playerTakeDamage;
     
     [SerializeField] private float acceleration = 4f;
     [SerializeField] private float deceleration = -20f;
     private float accelMax;
     [SerializeField] private float turnSpeed = 4f;
     private float currentSpeed = 10f;
-
     private float moveInput;
     
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        playerTakeDamage = GetComponent<TakeDamage>();
         
         accelMax = acceleration;
     }
@@ -30,7 +31,6 @@ public class PlayerControl : MonoBehaviour
     private void Update()
     {
         bool isGrounded = Physics.Linecast(transform.position, groundCheck.position, groundLayer); // check for ground
-        
         
         if (isGrounded)
         {
@@ -42,12 +42,12 @@ public class PlayerControl : MonoBehaviour
         {
             if (!hasJumped)
             {
-                animator.SetBool("grounded", true);
+                animator.SetBool("grounded", false);
                 hasJumped = true;
             }
             else
             {
-                animator.SetBool("grounded", false);
+                animator.SetBool("grounded", true);
             }
             moveInput = 0;
         }
@@ -58,6 +58,9 @@ public class PlayerControl : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (playerTakeDamage.StunTime > 0f)
+            return;
+        
         transform.Rotate(transform.up, moveInput * turnSpeed * Time.fixedDeltaTime);
         LimitRotation();
         
