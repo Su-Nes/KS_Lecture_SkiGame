@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2043894100862890394}
   - component: {fileID: 1261709102882740476}
   - component: {fileID: 8173722470958183633}
-  - component: {fileID: 8429269694172039803}
+  - component: {fileID: 3818502694871263408}
   m_Layer: 0
   m_Name: PinkFlag
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5696134228473390917}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.00000058114523}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 31.37, y: -66.59163, z: 93.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -104,9 +104,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 19.805824, y: 3.076046, z: 0.344602}
-  m_Center: {x: 10.07, y: 2.055963, z: 0}
---- !u!114 &8429269694172039803
+  m_Size: {x: 19.805824, y: 37.064163, z: 0.344602}
+  m_Center: {x: 10.07, y: 19.050022, z: -7.958044e-15}
+--- !u!114 &3818502694871263408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,21 +115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5696134228473390917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ad12808234b1414d8b330277a886c3c, type: 3}
+  m_Script: {fileID: 11500000, guid: eba5799f14ede154e80d7c50e5b81a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: CallOnTimePenalty
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  flagType: 1

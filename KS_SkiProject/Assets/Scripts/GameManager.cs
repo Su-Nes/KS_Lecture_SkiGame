@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public delegate void RaceEvent();
-    public static event RaceEvent raceStart, raceEnd, timePenalty;
+    public static event RaceEvent raceStart, raceEnd, timePenalty, gameQuit;
 
     public static void CallOnRaceStart()
     {
@@ -20,5 +20,10 @@ public class GameManager : MonoBehaviour
     public static void CallOnTimePenalty()
     {
         timePenalty?.Invoke();
+    }
+
+    public static void CallOnGameQuit()
+    {
+        gameQuit?.Invoke();
     }
 }

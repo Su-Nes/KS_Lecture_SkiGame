@@ -5,10 +5,15 @@ using UnityEngine;
 public class PlayerEvents : MonoBehaviour
 {
     public delegate void OnPlayerHit();
-    public static event OnPlayerHit onHit;
+    public static event OnPlayerHit onHit, boost;
 
     public static void CallOnPlayerHit()
     {
         onHit?.Invoke();
+    }
+    
+    public static void CallOnBoost()
+    {
+        boost?.Invoke();
     }
 }

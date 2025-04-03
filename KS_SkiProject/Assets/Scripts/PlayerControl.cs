@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
@@ -16,6 +17,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float deceleration = -20f;
     private float accelMax;
     [SerializeField] private float turnSpeed = 4f;
+    [SerializeField] private float boostSpeed = 3f;
     private float currentSpeed = 10f;
     private float moveInput;
     
@@ -26,6 +28,16 @@ public class PlayerControl : MonoBehaviour
         playerTakeDamage = GetComponent<TakeDamage>();
         
         accelMax = acceleration;
+    }
+
+    private void OnEnable()
+    {
+        PlayerEvents.boost += Boost;
+    }
+
+    private void OnDisable()
+    {
+        PlayerEvents.boost -= Boost;
     }
 
     private void Update()
@@ -71,6 +83,11 @@ public class PlayerControl : MonoBehaviour
         Vector3 velocity = transform.forward * (currentSpeed * Time.fixedDeltaTime);
         velocity.y = rb.velocity.y;
         rb.velocity = velocity;
+    }
+
+    private void Boost()
+    {
+        currentSpeed += boostSpeed;
     }
 
     private void LimitRotation()
