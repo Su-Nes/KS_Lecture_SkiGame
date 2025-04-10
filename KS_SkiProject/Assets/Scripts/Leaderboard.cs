@@ -9,11 +9,6 @@ public class Leaderboard : MonoBehaviour
     [SerializeField] private List<float> scores = new();
 
 
-    private void Start()
-    {
-        LoadTimes();
-    }
-
     public void AddScore(float score)
     {
         scores.Add(score);    
@@ -23,24 +18,38 @@ public class Leaderboard : MonoBehaviour
 
     private void OnEnable()
     {
-        SceneManager.activeSceneChanged += ClearTimes;
+        SceneManager.activeSceneChanged += RefreshTimes;
     }
 
     private void OnDisable()
     {
-        SceneManager.activeSceneChanged -= ClearTimes;
+        SceneManager.activeSceneChanged -= RefreshTimes;
     }
 
-    private void ClearTimes(Scene scene, Scene nextScene)
+    private void RefreshTimes(Scene scene, Scene nextScene)
     {
         scores.Clear();
-        
+        LoadTimes();
+    }
+
+    private void DeleteData()
+    {
+        scores.Clear();
+        PlayerPrefs.DeleteAll();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            DeleteData();
+        }
     }
 
     private void SaveTimes()
     {
         int i = 0;
-        foreach (int score in scores)
+        foreach (float score in scores)
         {
             PlayerPrefs.SetFloat($"time {i}", score);
             i++;
@@ -52,11 +61,13 @@ public class Leaderboard : MonoBehaviour
 
     private void LoadTimes()
     {
-        scores = new List<float>();
+        //scores = new List<float>();
         for (int i = 0; i < 5; i++)
         {
-            if(PlayerPrefs.HasKey($"time {i}"))
+            if (PlayerPrefs.GetFloat($"time {i}") != 0f)
                 scores.Add(PlayerPrefs.GetFloat($"time {i}"));
+            else
+                break;
         }
     }
 }

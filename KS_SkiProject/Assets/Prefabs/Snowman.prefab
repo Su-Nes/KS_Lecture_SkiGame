@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5963913302363350120}
   - component: {fileID: 96609833191010222}
   - component: {fileID: 9203170919705277777}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 124021521397654723}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 2224546282287839123}
   - component: {fileID: 8522877526057073859}
   - component: {fileID: 8173803348922748001}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Smile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ Transform:
   m_GameObject: {fileID: 964645192803161083}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 8101019810981223850}
   - component: {fileID: 2727891759014547684}
   - component: {fileID: 433310490807295914}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: RightAr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ Transform:
   m_GameObject: {fileID: 1554089626391497723}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 6909662922206932552}
   - component: {fileID: 7677405335416085603}
   - component: {fileID: 8700335031173864141}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ Transform:
   m_GameObject: {fileID: 2695304137608806443}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 8695622677595957051}
   - component: {fileID: 2639844820272763864}
   - component: {fileID: 1416298283071855946}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ Transform:
   m_GameObject: {fileID: 2893255613527737967}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -687,7 +687,7 @@ GameObject:
   - component: {fileID: 6386081816729076298}
   - component: {fileID: 1454781874864259499}
   - component: {fileID: 7369991135815054924}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,7 +703,7 @@ Transform:
   m_GameObject: {fileID: 5972053864360424090}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 989216889512817662}
   - component: {fileID: 8750481260132998588}
   - component: {fileID: 984232197080311216}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -955,7 +955,7 @@ GameObject:
   - component: {fileID: 4889049522426537287}
   - component: {fileID: 6313522226667934132}
   - component: {fileID: 755592124536243986}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -971,7 +971,7 @@ Transform:
   m_GameObject: {fileID: 7135791066885570105}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1089,7 +1089,7 @@ GameObject:
   - component: {fileID: 4742129938618983515}
   - component: {fileID: 3064746705450205233}
   - component: {fileID: 6629964705332305012}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: HatBand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1105,7 +1105,7 @@ Transform:
   m_GameObject: {fileID: 7578711801835134969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1201,7 +1201,7 @@ GameObject:
   - component: {fileID: 103341853182251761}
   - component: {fileID: 1894493197931338826}
   - component: {fileID: 5574651252955496484}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1332,7 +1332,8 @@ GameObject:
   - component: {fileID: 9117953069100586070}
   - component: {fileID: 4085612886327515353}
   - component: {fileID: 2476701283469073992}
-  m_Layer: 10
+  - component: {fileID: 95243523199855079}
+  m_Layer: 6
   m_Name: Snowman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1349,7 +1350,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 94.84929, y: -11.92279, z: -169.09335}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1867245208847586878}
@@ -1384,7 +1385,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 4.47, y: 4, z: 7}
-  m_Center: {x: 0, y: 1.9, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2476701283469073992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1398,6 +1399,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explodeForce: 50
+--- !u!114 &95243523199855079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485532309953187564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a3d3561366b4f488f8e1b9af3620cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snowBall: {fileID: 4696559925989147744, guid: d103b39dceec7ef41a952c1d2de1c92e, type: 3}
+  throwDistance: 50
+  throwSpeed: 1250
 --- !u!1 &8498404323666300638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,7 +1427,7 @@ GameObject:
   - component: {fileID: 2739038824361519295}
   - component: {fileID: 641754169449722455}
   - component: {fileID: 29925584133929480}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
