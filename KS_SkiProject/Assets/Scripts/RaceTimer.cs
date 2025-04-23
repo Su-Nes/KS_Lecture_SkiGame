@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class RaceTimer : MonoBehaviour
 {
-    private float timer, timePenalty;
+    private float timer;
+    [SerializeField] private float timePenalty = 1f;
     private bool raceStarted;
+    
     [SerializeField] private Leaderboard leaderboard;
+    [SerializeField] private TMP_Text timerText;
     
     private void OnEnable()
     {
@@ -28,6 +32,7 @@ public class RaceTimer : MonoBehaviour
             return;
         
         timer += Time.deltaTime;
+        timerText.text = timer.ToString("F2");
     }
 
     private void StartTimer()

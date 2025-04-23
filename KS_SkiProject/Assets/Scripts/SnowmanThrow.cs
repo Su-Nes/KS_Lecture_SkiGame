@@ -9,6 +9,7 @@ public class SnowmanThrow : MonoBehaviour
     public int throwSpeed;
     private bool justThown;
     private Vector3 throwAngle = new(0, 0.33f, 0);
+    [SerializeField] private int fireDelay = 12;
     
     private GameObject target;
 
@@ -21,7 +22,7 @@ public class SnowmanThrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.frameCount % 6 != 0) // this is neat
+        if (Time.frameCount % fireDelay != 0) // this is neat
             return;
         
         float distanceToTarget = Vector3.Distance(target.transform.position, transform.position);

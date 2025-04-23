@@ -13,6 +13,7 @@ public class GameOverUI : MonoBehaviour
 
     private void Start()
     {
+        overlay.color = new(overlay.color.r, overlay.color.g, overlay.color.b, 1f);
         overlay.CrossFadeAlpha(0f, 1f, true);
         gameOverUI.SetActive(false);
     }
@@ -21,12 +22,22 @@ public class GameOverUI : MonoBehaviour
     {
         GameManager.raceEnd += EnableGameOverUI;
         GameManager.gameQuit += Quit;
+        
+        SceneManager.activeSceneChanged += RestartGame;
     }
     
     private void OnDisable()
     {
         GameManager.raceEnd -= EnableGameOverUI;
         GameManager.gameQuit -= Quit;
+        
+        SceneManager.activeSceneChanged -= RestartGame;
+    }
+    
+
+    private void RestartGame(Scene scene, Scene nextScene)
+    {
+        Start();
     }
 
     public void RestartLevel()
@@ -36,7 +47,10 @@ public class GameOverUI : MonoBehaviour
 
     public void GoToNextLevel()
     {
-        StartCoroutine(LoadSceneWithCrossFade(1f, SceneManager.GetActiveScene().buildIndex + 1));
+        if(SceneManager.GetActiveScene().buildIndex >= SceneManager.sceneCountInBuildSettings - 1)
+            StartCoroutine(LoadSceneWithCrossFade(1f, 0));
+        else
+            StartCoroutine(LoadSceneWithCrossFade(1f, SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public void QuitGame()

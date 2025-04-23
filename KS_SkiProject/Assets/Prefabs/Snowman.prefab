@@ -1412,8 +1412,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snowBall: {fileID: 4696559925989147744, guid: d103b39dceec7ef41a952c1d2de1c92e, type: 3}
-  throwDistance: 50
+  throwDistance: 20
   throwSpeed: 1250
+  fireDelay: 150
 --- !u!1 &8498404323666300638
 GameObject:
   m_ObjectHideFlags: 0

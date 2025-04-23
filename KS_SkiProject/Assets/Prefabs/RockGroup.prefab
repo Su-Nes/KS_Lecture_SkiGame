@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3533703290642192267}
   - component: {fileID: 2940314313527039057}
   - component: {fileID: 4734311597916247323}
+  - component: {fileID: 8569948340963374873}
   m_Layer: 0
   m_Name: pCube1
   m_TagString: Obstacle
@@ -106,6 +107,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4068373912626513877, guid: dc98d5f294c1a5f48a8788984da996bc, type: 3}
+--- !u!114 &8569948340963374873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781694759040481379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c6b443e1fc7bb4ebac33f7924cd9d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1135601396024123489
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,10 +128,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 326977025837693659}
-  - component: {fileID: 75593986735534260}
   m_Layer: 0
   m_Name: RockGroup
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135601396024123489}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.049276978, z: -0, w: 0.99878514}
+  m_LocalRotation: {x: 0, y: -0.049276773, z: 0, w: 0.9987852}
   m_LocalPosition: {x: -44.312386, y: -0.9200001, z: -7.931835}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
@@ -141,18 +153,6 @@ Transform:
   - {fileID: 3696919147075086276}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -5.649, z: 0}
---- !u!114 &75593986735534260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135601396024123489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13c6b443e1fc7bb4ebac33f7924cd9d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1541916583475345216
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 2604817385227772705}
   - component: {fileID: 1387954968968950177}
   - component: {fileID: 318250846262743917}
+  - component: {fileID: 1624110064961764414}
   m_Layer: 0
   m_Name: pCube3
   m_TagString: Obstacle
@@ -259,6 +260,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3369316746193770658, guid: dc98d5f294c1a5f48a8788984da996bc, type: 3}
+--- !u!114 &1624110064961764414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541916583475345216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c6b443e1fc7bb4ebac33f7924cd9d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8663453154816363231
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,6 +284,7 @@ GameObject:
   - component: {fileID: 665352491102165231}
   - component: {fileID: 3146664760710241211}
   - component: {fileID: 1807714061179826889}
+  - component: {fileID: 5248573273511211689}
   m_Layer: 0
   m_Name: pCube4
   m_TagString: Obstacle
@@ -365,3 +379,15 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3861478300804232965, guid: dc98d5f294c1a5f48a8788984da996bc, type: 3}
+--- !u!114 &5248573273511211689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8663453154816363231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c6b443e1fc7bb4ebac33f7924cd9d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
